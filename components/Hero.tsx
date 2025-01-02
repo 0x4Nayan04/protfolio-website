@@ -11,7 +11,6 @@ import { FaArrowDown } from 'react-icons/fa6';
 import Star from '@/public/images/emojistar.png';
 import Helix from '@/public/images/cube-helix.png';
 import Pyramid from '@/public/images/pyramid.png';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import MorphingText from './ui/morphing-text';
 import SparklesText from './ui/sparkles-text';
@@ -32,49 +31,16 @@ export default function Hero() {
       </div>
 
       <div className="">
-        <motion.img
-          src={Star.src}
-          alt="Star Image"
-          className="absolute md:top-24 sm:right-8 xl:right-36 size-48 lg:size-60 xl:size-72 top-16 -right-16 sm:block hidden"
-          animate={{
-            translateY: [-30, 30],
-          }}
-          transition={{
-            repeat: Infinity,
-            repeatType: 'mirror',
-            duration: 3,
-            ease: 'easeInOut',
-          }}
-        />
-        <motion.img
-          src={Pyramid.src}
-          alt="Pyramid Image"
-          className="absolute size-36 top-32 -right-4 sm:hidden block"
-          animate={{
-            translateY: [-30, 30],
-          }}
-          transition={{
-            repeat: Infinity,
-            repeatType: 'mirror',
-            duration: 3,
-            ease: 'easeInOut',
-          }}
-        />
+        <div className="absolute md:top-24 sm:right-8 xl:right-36 size-48 lg:size-60 xl:size-72 top-16 -right-16 sm:block hidden animate-float">
+          <Image src={Star} alt="Star Image" width={200} height={200} />
+        </div>
+        <div className="absolute size-36 top-32 -right-4 sm:hidden block animate-float">
+          <Image src={Pyramid} alt="Pyramid Image" width={144} height={144} />
+        </div>
 
-        <motion.img
-          src={Helix.src}
-          alt="Helix Image"
-          className="absolute size-48 lg:size-60 xl:size-72 bottom-32 left-4 xl:left-16 2xl:left-24 hidden md:block"
-          animate={{
-            translateY: [30, -30],
-          }}
-          transition={{
-            repeat: Infinity,
-            repeatType: 'mirror',
-            duration: 3,
-            ease: 'easeInOut',
-          }}
-        />
+        <div className="absolute size-48 lg:size-60 xl:size-72 bottom-32 left-4 xl:left-16 2xl:left-24 hidden md:block animate-float-reverse">
+          <Image src={Helix} alt="Helix Image" width={200} height={200} />
+        </div>
       </div>
 
       <GridBeam className="flex items-center justify-center flex-col max-w-lg h-1/2">
