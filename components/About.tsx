@@ -9,13 +9,7 @@ const About: React.FC = () => {
           About Me
         </h2>
         <p className="mt-4 text-neutral-200 mx-auto text-base xl:text-lg font-medium">
-          I am a Roorkee-based full-stack developer and B.Tech student at IIT
-          Roorkee, skilled in Next.js, TypeScript, and AI-powered applications.
-          Notable projects include RecomBooks (AI book recommendations),
-          CollabBoard (real-time whiteboard), and a YouTube channel management
-          extension. With leadership experience in NSS IIT Roorkee and the
-          Cultural Council, I bring innovation, technical expertise, and a
-          passion for impactful solutions.
+        Full-stack developer and B.Tech student at IIT Roorkee, building fast, user-focused web apps with Next.js, TypeScript, and AI. Creator of RecomBooks, Murmur, and Solana Rent Calculator, with leadership experience in NSS and the Cultural Council.
         </p>
       </WobbleCard>
     </div>

@@ -16,7 +16,7 @@ import MorphingText from './ui/morphing-text';
 import SparklesText from './ui/sparkles-text';
 
 export default function Hero() {
-  const texts = ['Front End Developer'];
+  const texts = ['Full Stack Developer'];
 
   return (
     <div className="h-screen relative bg-[#0e0e0e] overflow-hidden flex flex-col items-center justify-center px-4">

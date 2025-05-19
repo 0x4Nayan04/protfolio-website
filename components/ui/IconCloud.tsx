@@ -1,22 +1,25 @@
 import IconCloud from './icon-cloud';
 
 const slugs = [
-  'typescript',
   'javascript',
-  'react',
+  'typescript',
   'html5',
   'css3',
+  'react',
+  'nextdotjs',
+  'tailwindcss',
   'nodedotjs',
   'express',
-  'nextdotjs',
-  'prisma',
-  'postgresql',
+  'mongodb',
+  'zustand',
+  'zod',
+  'axios',
+  'socketdotio',
+  'jwt',
+  'nextauth',
   'git',
   'github',
   'visualstudiocode',
-  'tailwindcss',
-  'mongodb',
-  'git',
 ];
 
 export function IconCloudDemo() {
